@@ -1,0 +1,153 @@
+:root {
+  font-family: 'Segoe UI', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light dark;
+
+  /* Colors */
+  --primary-color: #4f80ff;
+  --primary-dark: #3f63d2;
+  --text-color: #212529;
+  --bg-color: #f4f7fb;
+  --card-bg: #ffffff;
+  --border-color: #d1d9e6;
+  --hover-color: #e8ecf5;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+/* Typography */
+h1 {
+  font-size: 3em;
+  line-height: 1.2;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+h2, h3 {
+  color: #2e3a59;
+  margin: 1.5rem 0 1rem;
+}
+
+p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Anchor */
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Buttons */
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(79, 128, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="url"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 128, 255, 0.2);
+  outline: none;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Light theme override */
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #1a1a1a;
+    --bg-color: #ffffff;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+  }
+
+  button {
+    background-color: var(--primary-color);
+  }
+
+  a:hover {
+    color: var(--primary-dark);
+  }
+}

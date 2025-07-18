@@ -1,0 +1,122 @@
+/* Center root container */
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #42a5f5, #90caf9);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Card style container */
+.card {
+  background: #9b6a6a;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+input[type="text"],
+input[type="url"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 1rem 0;
+  border: 2px solid #90caf9;
+  border-radius: 10px;
+  background-color: #f5faff;
+  color: hsl(0, 0%, 0%);
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #42a5f5;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+  outline: none;
+}
+
+/* Button */
+button,
+input[type="submit"] {
+  background: linear-gradient(to right, #42a5f5, #64b5f6);
+  color: white;
+  padding: 12px 20px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px #44ac8333;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #64b5f6, #42a5f5);
+  transform: translateY(-2px);
+}
+
+/* List of shortened URLs */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+li {
+  background: #f1f8ff;
+  padding: 1rem;
+  border-left: 4px solid #42a5f5;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  color: #f48888;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+/* Typography */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1976d2;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  color: #a4c9e2;
+  font-size: 0.95rem;
+}
